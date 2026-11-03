@@ -1,6 +1,6 @@
 # GELLO Implementation for Franka FR3 with ROS 2 (Humble) 
 
-This document describes how to use GELLO with crisp_dev docker container.
+This document describes how to use GELLO with fr3_duo_dev docker container.
 
 ## Calibration
 

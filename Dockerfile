@@ -56,7 +56,7 @@ RUN set -eux; \
     tar -xzf "$HOME/mujoco-${MUJOCO_VERSION}.tar.gz" -C "$HOME"; \
     rm "$HOME/mujoco-${MUJOCO_VERSION}.tar.gz"
 
-FROM mujoco_base AS crisp_dev
+FROM mujoco_base AS fr3_duo_dev
 
 ARG USER_UID=1001
 ARG USER_GID=1001

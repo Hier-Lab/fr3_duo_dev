@@ -16,7 +16,7 @@ Two rules are worth restating because they are easy to violate accidentally:
 
 ## Where the code actually runs
 
-This is a ROS 2 **Humble** workspace intended to be built and run **inside the `crisp_dev` Docker
+This is a ROS 2 **Humble** workspace intended to be built and run **inside the `fr3_duo_dev` Docker
 container**, not on the host. The repo root is bind-mounted to `/ros2_ws` in the container, so host
 paths and container paths refer to the same files but the container is the only place where
 `/opt/ros/humble` and the ROS dependencies exist. The container is `privileged`, `network_mode:
@@ -26,7 +26,7 @@ must not be used.
 ```bash
 docker compose build          # .env must contain USER_UID/USER_GID (see README.md step 1)
 docker compose up -d
-docker exec -it crisp_dev /bin/bash
+docker exec -it fr3_duo_dev /bin/bash
 ```
 
 Inside the container, every new shell needs the environment sourced:

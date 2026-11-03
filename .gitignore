@@ -1,10 +1,5 @@
 .vscode/*
-!.vscode/settings.json
-!.vscode/c_cpp_properties.json
-!.vscode/extensions.json
-!.vscode/launch.json
-!.vscode/tasks.json
-
+.devcontainer/*
 build
 install
 log

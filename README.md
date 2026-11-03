@@ -9,6 +9,27 @@ You must have **docker engine** installed, **_not_** docker desktop. This will i
       It is needed to mount the folder from inside the Docker container.
 
   2. **Build the container:**
+      
+      Add docker group 
+      ```bash
+      sudo groupadd docker
+      ```
+
+      Add your Linux user to the Docker group
+      ```bash
+      sudo usermod -aG docker $USER
+      ```
+
+      Activate the new group membership
+      ```bash
+      newgrp docker
+      ```
+      Then verify with 
+      ```bash
+      docker ps
+      ```
+      
+      Build container without sudo
       ```bash
       docker compose build
       ```
@@ -18,7 +39,7 @@ You must have **docker engine** installed, **_not_** docker desktop. This will i
       ```
   4. **Open a shell inside the container:**
       ```bash
-      docker exec -it crisp_dev /bin/bash
+      docker exec -it fr3_duo_dev /bin/bash
       ```
       or
       `Ctrl + Shift + P` > `Dev Containers: Attach to Running Container`
